@@ -1,0 +1,39 @@
+=76x* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    background-color: brown;
+    list-style: none;
+    text-align: center;
+   
+}
+ul li {
+   display: inline-block;;
+   position: relative;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 20px 25px;
+}
+ul li ul.drop li {
+  display: block;
+  background-color: brown;
+  margin: 2px 0px;
+}
+ul li ul.drop {
+    position: absolute;
+    z-index: 999;
+    background: gold;
+    display: none;
+    width: auto;
+}
+ul li a:hover {
+    background: gold;
+}
+ul li:hover ul.drop {
+    display: block;
+}
